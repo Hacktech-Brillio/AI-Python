@@ -21,7 +21,7 @@ nltk.download('stopwords')
 nltk.download('wordnet')
 
 # Load the CSV file
-data = pd.read_csv("train_dataset.csv")
+data = pd.read_csv("Data/train_dataset.csv")
 data = data.dropna(subset=['label'])
 
 # Map labels to 1 for legitimate (OR) and 0 for fake (CG)
@@ -111,7 +111,7 @@ print("Loading pre-trained embeddings...")
 embeddings_index = {}
 embed_size = 100  # Using GloVe 100d embeddings
 
-with open('glove.6B.100d.txt', encoding='utf8') as f:
+with open('Glove Embeddings/glove.6B.100d.txt', encoding='utf8') as f:
     for line in f:
         values = line.split()
         word = values[0]

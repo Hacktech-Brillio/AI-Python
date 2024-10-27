@@ -7,7 +7,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, classification_report
 
 # Load the CSV file
-data = pd.read_csv("train_dataset.csv")  # Replace with the path to your CSV file
+data = pd.read_csv("Data/train_dataset.csv")  # Replace with the path to your CSV file
 
 # Convert labels to numeric: OR -> 1 (legit), CG -> 0 (fake)
 data['label'] = data['label'].map({'OR': 1, 'CG': 0})

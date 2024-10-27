@@ -27,7 +27,7 @@ nltk.download('wordnet', quiet=True)
 nltk.download('averaged_perceptron_tagger', quiet=True)
 
 # Load the CSV file
-data = pd.read_csv("train_dataset.csv")
+data = pd.read_csv("Data/train_dataset.csv")
 data = data.dropna(subset=['label', 'review'])
 
 # Map labels to 1 for legitimate (OR) and 0 for fake (CG)
